@@ -9,6 +9,10 @@ TODO
 
 ## How to use
 
+### Add package to your project
+
+Add the package with this URL: https://github.com/Deewens/2D-Inventory-System.git?path=/Packages/me.deewens.2d.inventorysystem
+
 ### Set up the Inventory
 You can give an Inventory to any entity of your game and the procedure is pretty simple.
 1. Select the Entity **(GameObject or Prefab)** you want to add the **Inventory** to
@@ -20,16 +24,19 @@ You can give an Inventory to any entity of your game and the procedure is pretty
 1. Right-click in the *Project* view and go to **Create** -> **Inventory System** -> **Item**.   
 <img src="https://i.imgur.com/eTmm5Lc.png" width="40%">  
 2. Enter the information for your new item in the Scriptable Object you just created  
-<img src="https://i.imgur.com/S1I0gMM.png" width="40%">
-   1. Enter a name and a description
-   2. You should give an icon to your item for it to be displayed in the UI, the Icon should be a sprite
-   3. The Prefab property will be explained next
+<img src="https://i.imgur.com/S1I0gMM.png" width="40%">  
+
+   1. Enter a name and a description  
+   2. You should give an icon to your item for it to be displayed in the UI, the Icon should be a sprite  
+   3. The Prefab property will be explained next  
 3. Create a new Prefab in your Project and add it a **Sprite Renderer**
    1. Add the item **icon** to the Sprite Renderer if you want (the icon will be set by the script anyway)
    2. Add the script called **Item** to your Prefab  
-   <img src="https://i.imgur.com/4ytb2aF.png" width="20%">
+   <img src="https://i.imgur.com/4ytb2aF.png" width="20%">  
+   
    3. Add the Scriptable Object to the **Item Data** property of the script  
-   <img src="https://i.imgur.com/wWEb2Qz.png" width="30%">
+   <img src="https://i.imgur.com/wWEb2Qz.png" width="30%">  
+   
 4. Now, you can fill the **Prefab** property of the Scriptable Object your created before with the Prefab you just created
 
 ## Futures
