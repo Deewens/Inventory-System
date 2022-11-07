@@ -18,7 +18,7 @@ You can give an Inventory to any entity of your game and the procedure is pretty
 1. Select the Entity **(GameObject or Prefab)** you want to add the **Inventory** to
 2. Add the **Inventory Manager** script to your Entity  
 <img src="https://i.imgur.com/luuzDVX.png" width="30%">
-3. Check that your Entity has a **RigidBody2D** to enable the trigger and collect item
+3. Check that your Entity has a RigidBody2D to enable the trigger and collect item
 
 ### Create an item
 1. Right-click in the *Project* view and go to **Create** -> **Inventory System** -> **Item**.   
