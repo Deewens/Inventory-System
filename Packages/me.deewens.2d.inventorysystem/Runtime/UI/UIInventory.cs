@@ -1,13 +1,22 @@
-using System;
-using InventorySystem;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace InventorySystem
+namespace InventorySystem.UI
 {
     public abstract class UIInventory : MonoBehaviour
     {
-        [SerializeField] private bool isInventoryActive = true;
+        [SerializeField] [Tooltip("Template Prefab to be cloned when drawing a new slot for an item in the inventory")]
+        protected UIInventorySlot itemSlotPrefab;
 
+        /// <summary>
+        /// Container Game Object where every item slots will be instantiated
+        /// </summary>
+        protected Transform ItemSlotContainer;
+
+        protected List<UIInventorySlot> UIItemSlotList = new List<UIInventorySlot>();
+        [SerializeField] private bool isActiveOnStart = true;
+
+        private Inventory _inventory;
         public Inventory Inventory
         {
             get => _inventory;
@@ -18,19 +27,10 @@ namespace InventorySystem
             }
         }
 
-        /// <summary>
-        /// Container Game Object where every item slots will be instantiated
-        /// </summary>
-        protected Transform ItemSlotContainer;
-
-        [SerializeField] [Tooltip("Template Prefab to be cloned when drawing a new slot for an item in the inventory")]
-        protected GameObject itemSlotTemplatePrefab;
-
-        private Inventory _inventory;
 
         private void Awake()
         {
-            gameObject.SetActive(isInventoryActive);
+            gameObject.SetActive(isActiveOnStart);
 
             ItemSlotContainer = transform.Find("ItemSlotContainer");
             if (ItemSlotContainer == null)
@@ -57,6 +57,16 @@ namespace InventorySystem
             {
                 Destroy(itemSlot.gameObject);
             }
+        }
+
+        public void Show()
+        {
+            gameObject.SetActive(true);
+        }
+
+        public void Hide()
+        {
+            gameObject.SetActive(false);
         }
     }
 }
