@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using InventorySystem.ScriptableObjects;
 using UnityEngine;
@@ -7,6 +8,9 @@ namespace InventorySystem
     public class Inventory
     {
         private readonly List<InventoryItem> _items = new();
+        public List<InventoryItem> Items => _items;
+        
+        public event Action InventoryChanged;
 
         public void AddItem(ItemSO itemData)
         {
@@ -28,6 +32,8 @@ namespace InventorySystem
             {
                 _items.Add(new InventoryItem(itemData));
             }
+            
+            InventoryChanged?.Invoke();
         }
 
         public void RemoveItem(ItemSO itemData)
@@ -49,6 +55,8 @@ namespace InventorySystem
                     _items.Remove(item);
                 }
             }
+            
+            InventoryChanged?.Invoke();
         }
     }
 }
