@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Speed Boost Bottle
   description: This item gives a temporary speed boost to he player when consumed.
-  isStackable: 1
+  isStackable: 0
   icon: {fileID: 21300000, guid: 0c87284c3c705d24fa459ec5f2280aa9, type: 3}
   prefab: {fileID: 6077227535217439699, guid: f0b0f16863a2af54c80a80f214ff8cb7, type: 3}
