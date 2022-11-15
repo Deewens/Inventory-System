@@ -14,13 +14,13 @@ namespace InventorySystem.UI
         // TODO: Create a base InventoryController class that can be attached to GameObject that does not need any UI
 
         // ReSharper disable once InconsistentNaming
-        [SerializeField] private UIInventory UIInventory;
+        [SerializeField] protected UIInventory UIInventory;
         [SerializeField] private bool isActiveOnStart = true;
         [SerializeField] private InputAction openCloseInventoryAction;
 
         [field: SerializeField] public InventorySO InventorySO { get; private set; }
 
-        private void Start()
+        protected virtual void Start()
         {
             // Instantiate an empty inventory when starting the game
             if (UIInventory != null)
@@ -30,12 +30,6 @@ namespace InventorySystem.UI
             }
 
             openCloseInventoryAction.performed += OnOpenInventory;
-            UIInventory.OnItemActionRequested += HandleItemActionRequest;
-        }
-
-        private void HandleItemActionRequest(UIInventorySlot obj)
-        {
-            throw new NotImplementedException();
         }
 
         private void OnEnable()

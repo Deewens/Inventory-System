@@ -1934,8 +1934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3c93da78314e00b47e630242d8f1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemSlotPrefab: {fileID: 0}
-  isActiveOnStart: 1
+  itemSlotPrefab: {fileID: -8667639054015912184, guid: 6cad098ef769ffc438bd08cefd3d6baa, type: 3}
 --- !u!1 &7810493654290693111
 GameObject:
   m_ObjectHideFlags: 0
