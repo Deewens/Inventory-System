@@ -4,7 +4,7 @@ namespace InventorySystem.UI.PapyrusTheme
 {
     public class UIInventoryPapyrusTheme : UIInventory
     {
-        protected override void RefreshInventorySlots()
+        public override void RefreshInventorySlots()
         {
             RemoveAllItems();
 
@@ -13,9 +13,21 @@ namespace InventorySystem.UI.PapyrusTheme
             {
                 // Create a new item slot from the template
                 UIInventorySlotPapyrusTheme newItemSlot =
-                    (UIInventorySlotPapyrusTheme) Instantiate(itemSlotPrefab, Vector3.zero, Quaternion.identity);
-                UIItemSlotList.Add(newItemSlot);
+                    (UIInventorySlotPapyrusTheme) Instantiate(itemSlotPrefab, ItemSlotContainer);
+                newItemSlot.SetInventoryItem(item);
+                newItemSlot.OnItemSlotClicked += HandleItemClick;
+                newItemSlot.OnItemSlotRightClicked += HandleItemRightClick;
             }
+        }
+
+        private void HandleItemClick(UIInventorySlot item)
+        {
+            Debug.Log("Test");
+        }
+
+        private void HandleItemRightClick(UIInventorySlot obj)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

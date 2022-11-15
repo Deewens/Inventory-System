@@ -201,45 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b9f86719d9481a90692b6d2c3f5808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test:
-    m_Name: Test
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a8064e11-ecef-4ac3-81af-9879101f3d44
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: fa806071-226d-4a96-8565-6f49557f8630
-      m_Path: <Mouse>/forwardButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Test
-      m_Flags: 0
-    m_Flags: 0
-  testMap:
-    m_Name: Test Map
-    m_Id: 277e9ef8-641b-4223-bd1f-adb37ebc29ab
-    m_Asset: {fileID: 0}
-    m_Actions:
-    - m_Name: New action
-      m_Type: 1
-      m_ExpectedControlType: Button
-      m_Id: 47b6a442-70a3-4c81-9aa5-7eba82d96ed2
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Bindings:
-    - m_Name: 
-      m_Id: 536504a8-c755-459f-a6e9-e35aed49ef3d
-      m_Path: 
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: New action
-      m_Flags: 0
 --- !u!1 &6499736371596929024
 GameObject:
   m_ObjectHideFlags: 0

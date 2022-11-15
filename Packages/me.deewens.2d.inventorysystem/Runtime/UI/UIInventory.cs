@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using InventorySystem.ScriptableObjects;
 using UnityEngine;
 
 namespace InventorySystem.UI
@@ -12,26 +14,24 @@ namespace InventorySystem.UI
         /// Container Game Object where every item slots will be instantiated
         /// </summary>
         protected Transform ItemSlotContainer;
-
-        protected List<UIInventorySlot> UIItemSlotList = new List<UIInventorySlot>();
-        [SerializeField] private bool isActiveOnStart = true;
-
-        private Inventory _inventory;
-        public Inventory Inventory
+        
+        private InventorySO _inventory;
+        public InventorySO Inventory
         {
             get => _inventory;
             set
             {
                 _inventory = value;
                 _inventory.InventoryChanged += RefreshInventorySlots;
+                RefreshInventorySlots();
             }
         }
+
+        public event Action<UIInventorySlot> OnItemActionRequested;
 
 
         private void Awake()
         {
-            gameObject.SetActive(isActiveOnStart);
-
             ItemSlotContainer = transform.Find("ItemSlotContainer");
             if (ItemSlotContainer == null)
             {
@@ -42,10 +42,10 @@ namespace InventorySystem.UI
             // Refresh inventory on Awake, to prevent a "small" freeze by doing it when getting an object for the first time
             // Idk why this do that, but this seems to fix the issue
             // Well, after further investigation, it does not fix the issue, I let it like that for now, I'll try later to investigate this
-            RefreshInventorySlots();
+            //RefreshInventorySlots();
         }
 
-        protected abstract void RefreshInventorySlots();
+        public abstract void RefreshInventorySlots();
 
         /// <summary>
         /// Clear the UI of all its items

@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd250f168924a958da320fd2d528a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: 853df54a2bc7f7d4590332dfe8ea85c3, type: 2}
   UIInventory: {fileID: 8695061570497270252}
   openCloseInventoryAction:
     m_Name: Open Close Inventory

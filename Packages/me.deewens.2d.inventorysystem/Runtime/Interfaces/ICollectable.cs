@@ -10,7 +10,7 @@ namespace InventorySystem.Interfaces
         /// <summary>
         /// Add item to the inventory passed in parameter
         /// </summary>
-        /// <param name="inventory">The inventory to add Item to</param>
-        void Collect(Inventory inventory);
+        /// <param name="inventorySO">The inventory to add Item to</param>
+        void Collect(InventorySO inventorySO);
     }
 }
