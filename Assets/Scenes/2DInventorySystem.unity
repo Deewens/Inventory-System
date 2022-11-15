@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 3197721}
   - component: {fileID: 3197719}
   - component: {fileID: 3197722}
+  - component: {fileID: 3197723}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -259,8 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd250f168924a958da320fd2d528a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 853df54a2bc7f7d4590332dfe8ea85c3, type: 2}
   UIInventory: {fileID: 8695061570497270252}
+  isActiveOnStart: 1
   openCloseInventoryAction:
     m_Name: Open Close Inventory
     m_Type: 0
@@ -278,6 +279,19 @@ MonoBehaviour:
       m_Action: Open Close Inventory
       m_Flags: 0
     m_Flags: 0
+  <InventorySO>k__BackingField: {fileID: 11400000, guid: 853df54a2bc7f7d4590332dfe8ea85c3, type: 2}
+--- !u!114 &3197723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3197714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa617fc454e685c41be37c545fd6f1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &311914158
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29519a48189d43189ec170dca6a45d4d, type: 3}
   m_Name: Health Potion
   m_EditorClassIdentifier: 
-  name: Health Potion
-  description: Restore healt of the player by a small amount.
-  isStackable: 1
-  icon: {fileID: 21300000, guid: f1bb83075fa68df40b5265ac8a118d2d, type: 3}
-  prefab: {fileID: 0}
+  <Name>k__BackingField: Health Potion
+  <Description>k__BackingField: "Restore your healt!\t\t"
+  <IsStackable>k__BackingField: 1
+  <Icon>k__BackingField: {fileID: 21300000, guid: f1bb83075fa68df40b5265ac8a118d2d, type: 3}
+  prefab: {fileID: 3304488925656680657, guid: ea451102b68a64d48abf1b56f181d7c1, type: 3}

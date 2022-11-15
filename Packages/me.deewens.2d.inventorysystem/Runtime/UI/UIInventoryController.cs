@@ -6,22 +6,26 @@ using UnityEngine.InputSystem;
 
 namespace InventorySystem.UI
 {
+    /// <summary>
+    /// Instantiate and manage the Inventory attached to any GameObject that needs an inventory with a UI
+    /// </summary>
     public class UIInventoryController : MonoBehaviour
     {
-        [SerializeField] private InventorySO inventory;
+        // TODO: Create a base InventoryController class that can be attached to GameObject that does not need any UI
+
         // ReSharper disable once InconsistentNaming
         [SerializeField] private UIInventory UIInventory;
         [SerializeField] private bool isActiveOnStart = true;
         [SerializeField] private InputAction openCloseInventoryAction;
-        
-        private InventorySO _inventorySO;
+
+        [field: SerializeField] public InventorySO InventorySO { get; private set; }
 
         private void Start()
         {
             // Instantiate an empty inventory when starting the game
             if (UIInventory != null)
             {
-                UIInventory.Inventory = inventory;
+                UIInventory.Inventory = InventorySO;
                 UIInventory.gameObject.SetActive(isActiveOnStart);
             }
 
@@ -54,12 +58,6 @@ namespace InventorySystem.UI
             {
                 UIInventory.Show();
             }
-        }
-        
-        private void OnTriggerEnter2D(Collider2D col)
-        {
-            ICollectable item = col.GetComponent<ICollectable>();
-            item?.Collect(inventory);
         }
     }
 }
