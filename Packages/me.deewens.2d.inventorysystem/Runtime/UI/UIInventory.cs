@@ -27,9 +27,6 @@ namespace InventorySystem.UI
             }
         }
 
-        public event Action<UIInventorySlot> OnItemActionRequested;
-
-
         private void Awake()
         {
             ItemSlotContainer = transform.Find("ItemSlotContainer");
@@ -38,11 +35,6 @@ namespace InventorySystem.UI
                 throw new InventoryUIElementNotFoundException(
                     "ItemSlotContainer GameObject is missing inside UIInventoryContainer");
             }
-
-            // Refresh inventory on Awake, to prevent a "small" freeze by doing it when getting an object for the first time
-            // Idk why this do that, but this seems to fix the issue
-            // Well, after further investigation, it does not fix the issue, I let it like that for now, I'll try later to investigate this
-            //RefreshInventorySlots();
         }
 
         public abstract void RefreshInventorySlots();

@@ -238,7 +238,10 @@
       "version": "file:me.deewens.2d.inventorysystem",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {}
+      "dependencies": {
+        "com.unity.inputsystem": "1.4.4",
+        "com.unity.textmeshpro": "3.0.6"
+      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
