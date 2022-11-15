@@ -1,18 +1,21 @@
-﻿using InventorySystem.ScriptableObjects;
+﻿using System;
+using InventorySystem.ScriptableObjects;
+using UnityEngine;
 
 namespace InventorySystem
 {
+    [Serializable]
     public class InventoryItem
     {
         /// <summary>
         /// Item data stored in the inventory
         /// </summary>
-        public ItemSO ItemData { get; }
+        [field: SerializeField] public ItemSO ItemData { get; private set; }
 
         /// <summary>
         /// Quantity of this item stored in the inventory
         /// </summary>
-        public int Quantity { get; set; }
+        [field: SerializeField] public int Quantity { get; set; }
 
         public InventoryItem(ItemSO itemData)
         {

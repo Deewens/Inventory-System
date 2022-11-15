@@ -1,27 +1,25 @@
 using System;
 using System.Collections.Generic;
-using InventorySystem.ScriptableObjects;
 using UnityEngine;
 
-namespace InventorySystem
+namespace InventorySystem.ScriptableObjects
 {
-    public class Inventory
+    [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
+    public class InventorySO : ScriptableObject
     {
-        private readonly List<InventoryItem> _items = new();
-        public List<InventoryItem> Items => _items;
-        
+        [field: SerializeField] public List<InventoryItem> Items { get; private set; } = new();
         public event Action InventoryChanged;
 
         public void AddItem(ItemSO itemData)
         {
             Debug.Log("Adding item to inventory: " + itemData);
-            
+
             if (itemData.IsStackable)
             {
-                InventoryItem item = _items.Find(item => item.ItemData == itemData);
+                InventoryItem item = Items.Find(item => item.ItemData == itemData);
                 if (item == null)
                 {
-                    _items.Add(new InventoryItem(itemData));
+                    Items.Add(new InventoryItem(itemData));
                 }
                 else
                 {
@@ -30,15 +28,15 @@ namespace InventorySystem
             }
             else
             {
-                _items.Add(new InventoryItem(itemData));
+                Items.Add(new InventoryItem(itemData));
             }
-            
+
             InventoryChanged?.Invoke();
         }
 
         public void RemoveItem(ItemSO itemData)
         {
-            InventoryItem item = _items.Find(item => item.ItemData == itemData);
+            InventoryItem item = Items.Find(item => item.ItemData == itemData);
 
             if (item != null)
             {
@@ -47,15 +45,15 @@ namespace InventorySystem
                     item.Quantity--;
                     if (item.Quantity == 0)
                     {
-                        _items.Remove(item);
+                        Items.Remove(item);
                     }
                 }
                 else
                 {
-                    _items.Remove(item);
+                    Items.Remove(item);
                 }
             }
-            
+
             InventoryChanged?.Invoke();
         }
     }

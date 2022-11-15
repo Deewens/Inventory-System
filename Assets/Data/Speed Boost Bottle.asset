@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29519a48189d43189ec170dca6a45d4d, type: 3}
   m_Name: Speed Boost Bottle
   m_EditorClassIdentifier: 
-  name: Speed Boost Bottle
-  description: This item gives a temporary speed boost to he player when consumed.
-  isStackable: 0
-  icon: {fileID: 21300000, guid: 0c87284c3c705d24fa459ec5f2280aa9, type: 3}
+  <Name>k__BackingField: Speed Boost Bottle
+  <Description>k__BackingField: A bottle that gives you a speed boost!
+  <IsStackable>k__BackingField: 1
+  <Icon>k__BackingField: {fileID: 21300000, guid: f1bb83075fa68df40b5265ac8a118d2d, type: 3}
   prefab: {fileID: 6077227535217439699, guid: f0b0f16863a2af54c80a80f214ff8cb7, type: 3}

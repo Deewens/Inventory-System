@@ -1,23 +1,19 @@
-﻿using System;
-using TMPro;
-using UnityEngine;
+﻿using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace InventorySystem
+namespace InventorySystem.UI.PapyrusTheme
 {
     public class UIInventorySlotPapyrusTheme : UIInventorySlot
     {
         private Image _icon;
-        private TextMeshProUGUI _amountText;
+        private TextMeshProUGUI _quantityText;
 
-        public override void Awake()
+        public  void Awake()
         {
-            base.Awake();
-            
             // Initialise the slot by getting the necessary components.
             _icon = GetComponentInChildren<Image>();
-            _amountText = GetComponentInChildren<TextMeshProUGUI>();
+            _quantityText = GetComponentInChildren<TextMeshProUGUI>();
         }
 
         public override void SetInventoryItem(InventoryItem item)
@@ -28,21 +24,12 @@ namespace InventorySystem
             _icon.sprite = item.ItemData.Icon;
             if (item.Quantity > 1)
             {
-                _amountText.SetText(item.Quantity.ToString());
+                _quantityText.SetText(item.Quantity.ToString());
             }
             else
             {
-                _amountText.SetText("");
+                _quantityText.SetText("");
             }
-        }
-
-        public override void OnPointerClick(PointerEventData eventData)
-        {
-            if (eventData.button == PointerEventData.InputButton.Left)
-            {
-                
-            }
-            throw new System.NotImplementedException();
         }
     }
 }

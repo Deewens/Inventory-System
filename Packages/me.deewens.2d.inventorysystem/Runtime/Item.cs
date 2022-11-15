@@ -9,9 +9,9 @@ namespace InventorySystem
     {
         [SerializeField] private ItemSO itemData;
         
-        public void Collect(Inventory inventory)
+        public void Collect(InventorySO inventorySO)
         {
-            inventory.AddItem(itemData);
+            inventorySO.AddItem(itemData);
             Destroy(gameObject);
         }
     }

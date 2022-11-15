@@ -1,4 +1,6 @@
 ﻿using System;
+using InventorySystem.Interfaces;
+using InventorySystem.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,22 +8,30 @@ namespace InventorySystem.UI
 {
     public class UIInventoryController : MonoBehaviour
     {
+        [SerializeField] private InventorySO inventory;
         // ReSharper disable once InconsistentNaming
         [SerializeField] private UIInventory UIInventory;
+        [SerializeField] private bool isActiveOnStart = true;
         [SerializeField] private InputAction openCloseInventoryAction;
         
-        private Inventory _inventory;
+        private InventorySO _inventorySO;
 
-        private void Awake()
+        private void Start()
         {
             // Instantiate an empty inventory when starting the game
-            _inventory = new Inventory();
             if (UIInventory != null)
             {
-                UIInventory.Inventory = _inventory;
+                UIInventory.Inventory = inventory;
+                UIInventory.gameObject.SetActive(isActiveOnStart);
             }
 
             openCloseInventoryAction.performed += OnOpenInventory;
+            UIInventory.OnItemActionRequested += HandleItemActionRequest;
+        }
+
+        private void HandleItemActionRequest(UIInventorySlot obj)
+        {
+            throw new NotImplementedException();
         }
 
         private void OnEnable()
@@ -44,6 +54,12 @@ namespace InventorySystem.UI
             {
                 UIInventory.Show();
             }
+        }
+        
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            ICollectable item = col.GetComponent<ICollectable>();
+            item?.Collect(inventory);
         }
     }
 }
