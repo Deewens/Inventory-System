@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace InventorySystem
 {
+    /// <summary>
+    /// Item stored and stacked in the inventory
+    /// </summary>
     [Serializable]
     public class InventoryItem
     {

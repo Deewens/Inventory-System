@@ -234,7 +234,7 @@
       },
       "url": "https://packages.unity.com"
     },
-    "me.deewens.2d.inventorysystem": {
+    "me.deewens.inventorysystem": {
       "version": "file:me.deewens.2d.inventorysystem",
       "depth": 0,
       "source": "embedded",

@@ -4,16 +4,21 @@ using UnityEngine;
 
 namespace InventorySystem.ScriptableObjects
 {
+    /// <summary>
+    /// Inventory holder, store a list of InventoryItem. Item added are stored in a InventoryItem object
+    /// </summary>
     [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
     public class InventorySO : ScriptableObject
     {
         [field: SerializeField] public List<InventoryItem> Items { get; private set; } = new();
         public event Action InventoryChanged;
 
+        /// <summary>
+        /// Add an item to the inventory.
+        /// </summary>
+        /// <param name="itemData">Item ScriptableObject</param>
         public void AddItem(ItemSO itemData)
         {
-            Debug.Log("Adding item to inventory: " + itemData);
-
             if (itemData.IsStackable)
             {
                 InventoryItem item = Items.Find(item => item.ItemData == itemData);
@@ -34,6 +39,10 @@ namespace InventorySystem.ScriptableObjects
             InventoryChanged?.Invoke();
         }
 
+        /// <summary>
+        /// Remove the specified Item ScriptableObject from the Inventory
+        /// </summary>
+        /// <param name="itemData">Item ScriptableObject</param>
         public void RemoveItem(ItemSO itemData)
         {
             InventoryItem item = Items.Find(item => item.ItemData == itemData);
