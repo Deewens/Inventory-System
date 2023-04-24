@@ -14,4 +14,9 @@ public class DebugUI : MonoBehaviour
     {
         inventoryHolder.AddItem(itemList[0]);
     }
+
+    public void RemoveLastItemFromInventory()
+    {
+        inventoryHolder.Inventory.RemoveItem(itemList[^1]);
+    }
 }
