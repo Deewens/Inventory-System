@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b32ec0cc95243489942ccbe1307ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  createInventoryAtRuntime: 1
   <Inventory>k__BackingField: {fileID: 11400000, guid: 90f1fb1e6e19f134fbf50b09686ac749, type: 2}
 --- !u!1 &2046094160
 GameObject:

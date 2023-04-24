@@ -3,10 +3,17 @@ using UnityEngine;
 
 public class InventoryHolder : MonoBehaviour
 {
+    [SerializeField] private bool createInventoryAtRuntime = false;
     [field: SerializeField] public InventorySO Inventory { get; set; }
 
     private void Awake()
     {
+        if (createInventoryAtRuntime)
+        {
+            Debug.Log("An Inventory has been created at runtime.");
+            Inventory = ScriptableObject.CreateInstance<InventorySO>();
+        }
+            
         Inventory.InventoryChanged += OnInventoryChanged;
         Inventory.ItemAdded += OnItemAdded;
         Inventory.ItemRemoved += OnItemRemoved;
