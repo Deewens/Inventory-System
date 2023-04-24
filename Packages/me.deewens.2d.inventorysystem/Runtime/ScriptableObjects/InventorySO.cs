@@ -9,6 +9,8 @@ namespace InventorySystem.ScriptableObjects
     {
         [field: SerializeField] public List<InventoryItem> Items { get; private set; } = new();
         public event Action InventoryChanged;
+        
+        public event Action<ItemSO> ItemAdded;
 
         public void AddItem(ItemSO itemData)
         {
@@ -31,7 +33,11 @@ namespace InventorySystem.ScriptableObjects
                 Items.Add(new InventoryItem(itemData));
             }
 
+            // Invoke event whenever an item is added
+            ItemAdded?.Invoke(itemData);
+            
             InventoryChanged?.Invoke();
+            
         }
 
         public void RemoveItem(ItemSO itemData)
