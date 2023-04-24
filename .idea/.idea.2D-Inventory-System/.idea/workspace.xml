@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/DebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DebugUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2DInventorySystem.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2DInventorySystem.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-36: Add debug button to remove last added item from the inventory">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/5f/65a5572f/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Assets/Scenes/2DInventorySystem.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/Exceptions/InventoryUIElementNotFound.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -130,7 +131,7 @@
       <workItem from="1679228380452" duration="936000" />
       <workItem from="1679229747018" duration="4594000" />
       <workItem from="1682367934183" duration="3017000" />
-      <workItem from="1682371433111" duration="344000" />
+      <workItem from="1682371433111" duration="522000" />
     </task>
     <task id="LOCAL-00001" summary="Removing and tiding stuff for RTE">
       <created>1679234385879</created>
@@ -160,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682371588160</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="XK-36: Add debug button to remove last added item from the inventory">
+      <created>1682371850978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682371850978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +210,7 @@
     <MESSAGE value="Removing and tiding stuff for RTE" />
     <MESSAGE value="XK-32: Add an even that triggers whenever an item has been added" />
     <MESSAGE value="XK-34: Add debug button to add a random item to the inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="XK-34: Add debug button to add a random item to the inventory" />
+    <MESSAGE value="XK-36: Add debug button to remove last added item from the inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="XK-36: Add debug button to remove last added item from the inventory" />
   </component>
 </project>

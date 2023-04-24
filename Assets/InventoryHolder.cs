@@ -7,8 +7,14 @@ public class InventoryHolder : MonoBehaviour
 
     private void Awake()
     {
-        Inventory.ItemAdded += OnItemAdded;
         Inventory.InventoryChanged += OnInventoryChanged;
+        Inventory.ItemAdded += OnItemAdded;
+        Inventory.ItemRemoved += OnItemRemoved;
+    }
+
+    private void OnItemRemoved(ItemSO removedItem)
+    {
+        Debug.Log($"Item has been added {removedItem.Name}");
     }
 
     private void OnInventoryChanged()

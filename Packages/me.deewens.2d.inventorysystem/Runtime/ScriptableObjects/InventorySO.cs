@@ -11,6 +11,7 @@ namespace InventorySystem.ScriptableObjects
         public event Action InventoryChanged;
         
         public event Action<ItemSO> ItemAdded;
+        public event Action<ItemSO> ItemRemoved;
 
         public void AddItem(ItemSO itemData)
         {
@@ -58,9 +59,11 @@ namespace InventorySystem.ScriptableObjects
                 {
                     Items.Remove(item);
                 }
+                
+                
+                ItemRemoved?.Invoke(itemData);
+                InventoryChanged?.Invoke();
             }
-
-            InventoryChanged?.Invoke();
         }
     }
 }
