@@ -27,11 +27,7 @@ public class InventoryHolder : MonoBehaviour
     private void OnInventoryChanged()
     {
         Debug.Log("Inventory has been changed. New content:");
-        foreach (var item in Inventory.Items)
-        {
-            Debug.Log($"| {item.ItemData.Name} | {item.Quantity} |");
-        }
-        Debug.Log("------------------");
+        DisplayInventoryContent();
     }
 
     private void OnItemAdded(ItemSO addedItem)
@@ -51,5 +47,15 @@ public class InventoryHolder : MonoBehaviour
 
     public void LoadInventory()
     {
+        Inventory.Load();
+    }
+
+    public void DisplayInventoryContent()
+    {
+        foreach (var item in Inventory.Items)
+        {
+            Debug.Log($"| {item.ItemData.Name} | {item.Quantity} |");
+        }
+        Debug.Log("------------------");
     }
 }

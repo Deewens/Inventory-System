@@ -84,7 +84,8 @@ namespace InventorySystem
 
         public void Load()
         {
-            
+            FileManager.LoadFromFile("inventory.json", out string json);
+            JsonUtility.FromJsonOverwrite(json, this);
         }
     }
 }

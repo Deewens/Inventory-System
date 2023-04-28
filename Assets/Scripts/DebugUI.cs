@@ -33,4 +33,9 @@ public class DebugUI : MonoBehaviour
     {
         inventoryHolder.Inventory.Clear();
     }
+
+    public void DisplayInventoryContent()
+    {
+        inventoryHolder.DisplayInventoryContent();
+    }
 }
