@@ -338,10 +338,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1116923515198139440, guid: d1e6c4422555990458bbdcd7e4edf578, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ClearInventory
-      objectReference: {fileID: 0}
     - target: {fileID: 7857064953950073936, guid: d1e6c4422555990458bbdcd7e4edf578, type: 3}
       propertyPath: m_Name
       value: DebugUI

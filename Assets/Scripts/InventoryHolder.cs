@@ -48,4 +48,8 @@ public class InventoryHolder : MonoBehaviour
     {
         Inventory.Save();
     }
+
+    public void LoadInventory()
+    {
+    }
 }

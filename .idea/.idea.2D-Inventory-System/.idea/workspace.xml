@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-41: add debug button to save the inventory">
-      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" afterDir="false" />
+    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-39: add a way to save the inventory to a json file">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DebugUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InventoryHolder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
     <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Assets/Scripts/DebugUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/Exceptions/InventoryUIElementNotFound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Packages/me.deewens.2d.inventorysystem/Runtime/InventoryItem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Users/razor/Documents/Studies/Year 4/Real-World Modelling/2D-Inventory-System/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/ItemSO.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -135,7 +137,7 @@
       <workItem from="1679229747018" duration="4594000" />
       <workItem from="1682367934183" duration="3017000" />
       <workItem from="1682371433111" duration="1811000" />
-      <workItem from="1682682022911" duration="2545000" />
+      <workItem from="1682682022911" duration="2763000" />
     </task>
     <task id="LOCAL-00001" summary="Removing and tiding stuff for RTE">
       <created>1679234385879</created>
@@ -200,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682684576683</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="X4-43: Inventory can be cleared">
+      <created>1682684686630</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682684686630</updated>
+    </task>
+    <task id="LOCAL-00011" summary="XK-39: add a way to save the inventory to a json file">
+      <created>1682684753385</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682684753385</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +263,8 @@
     <MESSAGE value="XK-37: Inventory can be created directly from script. Check the boolean in the InventoryHolder" />
     <MESSAGE value="X4-44: add debug button to clearn inventory" />
     <MESSAGE value="XK-41: add debug button to save the inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="XK-41: add debug button to save the inventory" />
+    <MESSAGE value="X4-43: Inventory can be cleared" />
+    <MESSAGE value="XK-39: add a way to save the inventory to a json file" />
+    <option name="LAST_COMMIT_MESSAGE" value="XK-39: add a way to save the inventory to a json file" />
   </component>
 </project>

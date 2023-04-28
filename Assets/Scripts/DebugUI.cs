@@ -24,6 +24,11 @@ public class DebugUI : MonoBehaviour
         inventoryHolder.SaveInventory();
     }
 
+    public void LoadInventoryFromFile()
+    {
+        inventoryHolder.LoadInventory();
+    }
+
     public void ClearInventory()
     {
         inventoryHolder.Inventory.Clear();
