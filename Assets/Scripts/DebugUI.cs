@@ -18,6 +18,11 @@ public class DebugUI : MonoBehaviour
     {
         inventoryHolder.Inventory.RemoveItem(itemList[^1]);
     }
+    
+    public void SaveInventoryToFile()
+    {
+        inventoryHolder.SaveInventory();
+    }
 
     public void ClearInventory()
     {
