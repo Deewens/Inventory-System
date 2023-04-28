@@ -15,8 +15,6 @@ namespace InventorySystem
 
         public void AddItem(ItemSO itemData)
         {
-            Debug.Log("Adding item to inventory: " + itemData);
-
             if (itemData.IsStackable)
             {
                 InventoryItem item = Items.Find(item => item.ItemData == itemData);
