@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace InventorySystem.ScriptableObjects
+namespace InventorySystem
 {
     [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
     public class InventorySO : ScriptableObject
@@ -64,6 +64,29 @@ namespace InventorySystem.ScriptableObjects
                 ItemRemoved?.Invoke(itemData);
                 InventoryChanged?.Invoke();
             }
+        }
+
+        /// <summary>
+        /// Empty the inventory from every items
+        /// </summary>
+        public void Clear()
+        {
+            Items.Clear();
+            
+            InventoryChanged?.Invoke();
+        }
+        
+        public void Save()
+        {
+            string json = JsonUtility.ToJson(this);
+            FileManager.WriteToFile("inventory.json", json);
+            Debug.Log("Inventory has been saved!");
+            Debug.Log(Application.persistentDataPath);
+        }
+
+        public void Load()
+        {
+            
         }
     }
 }

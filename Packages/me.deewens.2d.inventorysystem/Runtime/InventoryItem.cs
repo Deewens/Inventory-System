@@ -1,5 +1,4 @@
 ﻿using System;
-using InventorySystem.ScriptableObjects;
 using UnityEngine;
 
 namespace InventorySystem

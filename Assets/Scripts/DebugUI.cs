@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using InventorySystem.ScriptableObjects;
+using InventorySystem;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DebugUI : MonoBehaviour
 {
@@ -18,5 +17,10 @@ public class DebugUI : MonoBehaviour
     public void RemoveLastItemFromInventory()
     {
         inventoryHolder.Inventory.RemoveItem(itemList[^1]);
+    }
+
+    public void ClearInventory()
+    {
+        inventoryHolder.Inventory.Clear();
     }
 }
