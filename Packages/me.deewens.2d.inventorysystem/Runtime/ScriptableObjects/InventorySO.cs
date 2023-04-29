@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace InventorySystem
 {
-    [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
+    [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory/Standard Inventory")]
     public class InventorySO : ScriptableObject
     {
         [field: SerializeField] public List<InventoryItem> Items { get; private set; } = new();

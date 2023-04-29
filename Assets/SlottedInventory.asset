@@ -17,7 +17,7 @@ MonoBehaviour:
     <Item>k__BackingField:
       <ItemData>k__BackingField: {fileID: 0}
       <Quantity>k__BackingField: 0
-  - <SlotCategory>k__BackingField: Default
+  - <SlotCategory>k__BackingField: Consumable
     <Item>k__BackingField:
       <ItemData>k__BackingField: {fileID: 0}
       <Quantity>k__BackingField: 0

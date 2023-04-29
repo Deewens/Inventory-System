@@ -2,7 +2,7 @@
 
 namespace InventorySystem
 {
-    [CreateAssetMenu(fileName = "New Default Item", menuName = "Inventory System/Default Item", order = 0)]
+    [CreateAssetMenu(fileName = "New Default Item", menuName = "Inventory System/Item/Item", order = 0)]
     public class ItemSO : ScriptableObject
     {
         public int ID => GetInstanceID();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace InventorySystem
 {
-    [CreateAssetMenu(fileName = "SlottedInventory", menuName = "Inventory System/Slotted Inventory", order = 0)]
+    [CreateAssetMenu(fileName = "SlottedInventory", menuName = "Inventory System/Inventory/Slotted Inventory", order = 0)]
     public class InventorySlottedSO : ScriptableObject
     {
         [field: SerializeField] public List<InventorySlot> Slots { get; private set; } = new();
