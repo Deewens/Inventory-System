@@ -9,6 +9,7 @@ public class DebugUI : MonoBehaviour
 
     [SerializeField] private List<ItemSO> itemList;
     
+    
     public void AddRandItemToInventory()
     {
         inventoryHolder.AddItem(itemList[0]);
