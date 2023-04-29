@@ -7,10 +7,23 @@ namespace InventorySystem
     [CreateAssetMenu(fileName = "SlottedInventory", menuName = "Inventory System/Slotted Inventory", order = 0)]
     public class InventorySlottedSO : ScriptableObject
     {
+        [field: SerializeField] public List<InventorySlot> Slots { get; private set; } = new();
         public event Action InventoryChanged;
 
         public event Action<ItemSO> ItemAdded;
         public event Action<ItemSO> ItemRemoved;
+
+        private void Awake()
+        {
+            InventorySlot newSlot = new InventorySlot
+            {
+                SlotCategory = "Handgun"
+            };
+            InventorySlot anotherSlot = new InventorySlot();
+            
+            Slots.Add(newSlot);
+            Slots.Add(anotherSlot);
+        }
 
         public void AddItem(ItemSO itemData)
         {
@@ -67,7 +80,7 @@ namespace InventorySystem
         /// </summary>
         public void Clear()
         {
-            //Slots.Clear();
+            Slots.Clear();
 
             InventoryChanged?.Invoke();
         }

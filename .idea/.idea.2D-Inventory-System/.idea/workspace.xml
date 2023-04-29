@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="">
+    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-46: A slotted inventory can be created from editor">
       <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlot.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ReflectionHelpers.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ReflectionHelpers.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,7 @@
       <workItem from="1682367934183" duration="3017000" />
       <workItem from="1682371433111" duration="1811000" />
       <workItem from="1682682022911" duration="7079000" />
-      <workItem from="1682765148160" duration="1589000" />
+      <workItem from="1682765148160" duration="2467000" />
     </task>
     <task id="LOCAL-00001" summary="Removing and tiding stuff for RTE">
       <created>1679234385879</created>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682685532912</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="XK-46: A slotted inventory can be created from editor">
+      <created>1682766988919</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682766988919</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +288,7 @@
     <MESSAGE value="XK-39: add a way to save the inventory to a json file" />
     <MESSAGE value="X4-42: add a button to laod a saved inventory" />
     <MESSAGE value="XK-40: inventory can now be loaded from a saved json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="XK-40: inventory can now be loaded from a saved json file" />
+    <MESSAGE value="XK-46: A slotted inventory can be created from editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="XK-46: A slotted inventory can be created from editor" />
   </component>
 </project>
