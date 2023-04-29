@@ -1,0 +1,21 @@
+{
+  "name": "me.deewens.inventorysystem",
+  "displayName": "Inventory System",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adrien Dudon (Deewens)",
+    "email": "dudonadrien@gmail.com"
+  },
+  "samples": [
+    {
+      "displayName": "Simple Example & Test",
+      "description": "Contains a simple example test with debug buttons that you can use to test the package and see its capabilities.",
+      "path": "Samples~/ExamplesAndTests"
+    }
+  ],
+  "description": "Simple backend for an inventory System that can be used in any games.",
+  "hideInEditor": false,
+  "dependencies": {
+    "com.unity.inputsystem": "1.4.4"
+  }
+}

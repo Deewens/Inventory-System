@@ -234,13 +234,12 @@
       },
       "url": "https://packages.unity.com"
     },
-    "me.deewens.2d.inventorysystem": {
-      "version": "file:me.deewens.2d.inventorysystem",
+    "me.deewens.inventorysystem": {
+      "version": "file:me.deewens.inventorysystem",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.unity.inputsystem": "1.4.4",
-        "com.unity.textmeshpro": "3.0.6"
+        "com.unity.inputsystem": "1.4.4"
       }
     },
     "com.unity.modules.ai": {
