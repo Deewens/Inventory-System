@@ -9,7 +9,7 @@ namespace InventorySystem
         /// <summary>
         /// Item data stored in the inventory
         /// </summary>
-        [field: SerializeField] public ItemSO ItemData { get; private set; }
+        [field: SerializeField] public ItemSO ItemData { get; set; }
 
         /// <summary>
         /// Quantity of this item stored in the inventory

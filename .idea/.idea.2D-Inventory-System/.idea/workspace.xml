@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-47: Inventory slots can be configured with a category">
-      <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/ItemSlottableSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/ItemSlottableSO.cs.meta" afterDir="false" />
+    <list default="true" id="2e8d41e9-9496-4386-a216-529a97f3fb5a" name="Changes" comment="XK-48: add a new item that have a slot category">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2D-Inventory-System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Health Potion.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Health Potion.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerInventory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerInventory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Speed Boost Bottle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Speed Boost Bottle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HandgunItem.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HandgunItem.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Inventory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PotionItem.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PotionItem.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DebugUI.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DebugUI.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health Potion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Health Potion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HotBarInventoryCanvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HotBarInventoryCanvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HotBarSlot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HotBarSlot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Speed Boost Bottle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Speed Boost Bottle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Prefabs/ItemSlotTemplate_PapyrusTheme.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Prefabs/ItemSlotTemplate_PapyrusTheme.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Prefabs/UIInventoryContainer_PapyrusTheme.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Prefabs/UIInventoryContainer_PapyrusTheme.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/13.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/2D Inventory System/0.2.0/Papyrus UI Example/Sprites/9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2DInventorySystem.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2DInventorySystem.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HotBarTest.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HotBarTest.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryHolder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventoryHolder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SlottedInventory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SlottedInventory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/InventorySlottedSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/InventorySO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/ItemSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/me.deewens.2d.inventorysystem/Runtime/ScriptableObjects/ItemSO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,10 +172,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="19552">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="19552" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -137,7 +198,7 @@
       <workItem from="1682367934183" duration="3017000" />
       <workItem from="1682371433111" duration="1811000" />
       <workItem from="1682682022911" duration="7079000" />
-      <workItem from="1682765148160" duration="2763000" />
+      <workItem from="1682765148160" duration="8209000" />
     </task>
     <task id="LOCAL-00001" summary="Removing and tiding stuff for RTE">
       <created>1679234385879</created>
@@ -244,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682768075714</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="XK-48: add a new item that have a slot category">
+      <created>1682768556449</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682768556449</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +365,7 @@
     <MESSAGE value="XK-40: inventory can now be loaded from a saved json file" />
     <MESSAGE value="XK-46: A slotted inventory can be created from editor" />
     <MESSAGE value="XK-47: Inventory slots can be configured with a category" />
-    <option name="LAST_COMMIT_MESSAGE" value="XK-47: Inventory slots can be configured with a category" />
+    <MESSAGE value="XK-48: add a new item that have a slot category" />
+    <option name="LAST_COMMIT_MESSAGE" value="XK-48: add a new item that have a slot category" />
   </component>
 </project>
